@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.3
+
+- Links point to the `mylasertools` GitHub organization, so the demo and repository links work again.
+
 ## 0.1.2
 
 - The README covers installing and using the package; development commands moved to CONTRIBUTING.md.

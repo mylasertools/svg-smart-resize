@@ -42,7 +42,7 @@ The manual `publish.yml` workflow is prepared for npm trusted publishing with pr
 | Setting           | Value                             |
 | :---------------- | :-------------------------------- |
 | Provider          | GitHub Actions                    |
-| Organization/user | `mylasertools-com`                |
+| Organization/user | `mylasertools`                |
 | Repository        | `svg-smart-resize`                |
 | Workflow filename | `publish.yml`                     |
 | Environment       | Leave empty                       |
