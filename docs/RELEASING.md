@@ -1,12 +1,12 @@
 # Releasing
 
-Version **0.1.1** is the latest release of [`@mylasertools/svg-smart-resize`](https://www.npmjs.com/package/@mylasertools/svg-smart-resize). Releases use the maintainer's npm account `julia.mlt`, an owner of the `mylasertools` organization.
+Releases of [`@mylasertools/svg-smart-resize`](https://www.npmjs.com/package/@mylasertools/svg-smart-resize) are published to npm from `main`.
 
 ## Release checks
 
 The package ships ESM/CommonJS builds and matching TypeScript declarations with zero runtime dependencies. CI covers Node 20, 22, and 24, plus Windows; the gzip budget is 13,000 bytes.
 
-1. Update the version and changelog, then commit with the repository's explicit maintainer identity. Verify both `git var GIT_AUTHOR_IDENT` and `git var GIT_COMMITTER_IDENT`, and verify the authenticated remote account.
+1. Update the version and changelog, then commit.
 2. From the repository root, run:
 
    ```sh
@@ -27,7 +27,7 @@ Published npm versions cannot be replaced. Do not reuse a published version numb
 
 ## Local publication
 
-Authenticate with the approved npm account using `npm login --auth-type=web`, then verify it with `npm whoami` and confirm organization access.
+Log in with an npm account that can publish to the `mylasertools` organization.
 
 ```sh
 npm publish --access public

@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.2
+
+- The README covers installing and using the package; development commands moved to CONTRIBUTING.md.
+
 ## 0.1.1
 
 - Detect finger joints on box panels as `joint` features. Preserving them keeps the finger depth (the material thickness) and scales the finger spacing, so panels resized together still mate. Previously every finger gap was a separate notch whose width was pinned, which overlapped the fingers.

@@ -12,6 +12,17 @@ Runtime dependencies need a strong reason. The complete ESM bundle has a 13,000-
 
 Changes should document unsupported input explicitly. Don't silently drop geometry or claim fabrication correctness from a bounding-box check.
 
+## Commands
+
+```sh
+npm ci
+npm run check
+npm run demo         # local demo; SVG files stay in the browser
+npm run assets       # regenerate the README illustrations
+npm run format       # format source and docs
+npm run test:package # test the installable tarball in an isolated consumer
+```
+
 ## Project layout
 
 - `src/xml.ts`, `svg.ts`: constrained SVG reading and physical units.
@@ -24,12 +35,4 @@ Changes should document unsupported input explicitly. Don't silently drop geomet
 
 ## Releasing
 
-For the initial npm publication, follow [the first-release checklist](docs/RELEASING.md).
-
-The repository includes a manual `publish.yml` workflow for npm trusted publishing. Configure an npm trusted publisher for GitHub organization `mylasertools-com`, repository `svg-smart-resize`, workflow `publish.yml`, with direct publishing allowed. This requires npm account/package access; the workflow file alone does not enable publishing.
-
-1. Update the version and changelog, run checks, and commit on `main`.
-2. Run the Publish workflow from `main`, with the exact package version as its input.
-3. Verify the npm version, then create a GitHub release with tag `v<version>`.
-
-The first npm publication may need an authenticated local `npm publish --access public` before a trusted publisher can be configured. Do not commit registry tokens.
+See [docs/RELEASING.md](docs/RELEASING.md).

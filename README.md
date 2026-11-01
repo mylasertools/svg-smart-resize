@@ -142,26 +142,6 @@ Conflict checks use sampled contours (default tolerance 0.02 mm). They flag pres
 
 [Read the full options, result schema, errors, and limits →](https://github.com/mylasertools-com/svg-smart-resize/blob/main/docs/API.md)
 
-## Develop locally
-
-```sh
-git clone https://github.com/mylasertools-com/svg-smart-resize.git
-cd svg-smart-resize
-npm ci
-npm run check
-npm run demo
-```
-
-Open `http://127.0.0.1:4173/demo/`. The demo runs entirely in your browser, accepts local SVG files, and exports the resized result. Uploads are never sent to a server.
-
-```sh
-npm run assets       # regenerate the actual-output README illustrations
-npm run format       # format source and docs
-npm run test:package # test the installable tarball in an isolated consumer
-```
-
-See [CONTRIBUTING](https://github.com/mylasertools-com/svg-smart-resize/blob/main/CONTRIBUTING.md). This is an independent project maintained by [MyLaserTools](https://mylasertools.com).
-
 ## License
 
 [MIT](https://github.com/mylasertools-com/svg-smart-resize/blob/main/LICENSE) © MyLaserTools.
