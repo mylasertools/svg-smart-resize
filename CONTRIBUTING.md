@@ -32,7 +32,3 @@ npm run test:package # test the installable tarball in an isolated consumer
 - `demo/`: a framework-free consumer of the built npm entry point.
 - `test/`: Node's built-in test runner; no test framework dependency.
 - `scripts/assets.mjs`: actual-output illustrations for the README.
-
-## Releasing
-
-See [docs/RELEASING.md](docs/RELEASING.md).
